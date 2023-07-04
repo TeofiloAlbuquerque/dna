@@ -5,13 +5,15 @@ void main() {
     var dna = DNASequence.random(13);
     var reverseDna = dna.reverseSequence;
     var complementDna = dna.complementSequence;
-    var nucleotide = 'C';
+    var nucleotide = 'T';
     var count = dna.countNucleotideOccurrences(nucleotide);
     print('Sequência aleatória: ${dna.sequence}');
     print('Sequência invertida: $reverseDna');
     print('Complemento da sequência do Dna: $complementDna');
-    print('O nucleotideo $nucleotide aparece $count');
+    print('Nsumero de ocorrencia do nucleotideo $nucleotide: $count');
   } catch (e) {
     print('Erro: $e');
   }
 }
+
+
